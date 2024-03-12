@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #CCFFCC;
+}
+.navBar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 30%;
+    padding: 10px 40px 10px 40px;
+}
+.navDiv{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 60%;
+}
+.logoDiv{
+    width: 30%;
+}
+.navDiv li{
+    list-style-type: none;
+}
+.navDiv li a{
+    text-decoration: none;
+    color: #F1E696;
+}
+nav{
+    background-color: #233142;
+}
