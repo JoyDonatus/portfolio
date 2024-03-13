@@ -9,31 +9,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script type="text/javascript" src="./app.js"></script>
 </head>
 <body>
-    <section>
+    <section class="section">
         <nav class="navBar">
             <div class="logoDiv">
-                <a href=""><img src="./images/MY_LOGO-removebg-preview.png" height="100" alt=""></a>
+                <a href="./index.html"><img src="./images/MY_LOGO-removebg-preview.png" height="100" alt=""></a>
             </div>
             <div class="navDiv">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#services">Services</a></li>
+            </div>
+            <div class="contactDiv">
+                <li><a href="#contact">Contact</a></li>
             </div> 
         </nav>
     </section>
-    <section>
-        <div class="aboutMe">
+    <section class="section">
+        <div id="aboutMe" class="aboutMeDiv">
             <h2>About Me</h2>
-            <p>My name is Joy Donatus</p>
+            <p>My name is Joy Donatus. I am a Web Developer.</p>
         </div>
-
+        <div class="aboutMeDiv" id="works">
+            <div>
+                <h2>Personal Projects</h2>
+                <p>These are personal projects I embarked on.</p>
+            </div>
+            <div>
+                <h2>Project for Clients</h2>
+                <p>These are some of the projects I have done officially.</p>
+                <a href="https://resource-arinade.com"><embed src="https://resource-arinade.com" type=""></a>
+            </div>
+        </div>
+        <div id="services" class="aboutMeDiv">
+            <h2>Services</h2>
+            <ul>
+                <li><a href="">Web Development</a></li>
+                <li><a href="#">Data Analysis</a></li>
+            </ul>
+        </div>
+        <div class="aboutMeDiv" id="contact">
+            <h2>Contact Form</h2>
+            <form action="">
+                <div class="inputDiv">
+                    <label for="name">Name</label>
+                    <input type="text" autocomplete="cc-name" name="Name" required placeholder="Enter your name">
+                </div>
+                <div class="inputDiv">
+                    <label for="email">Email</label>
+                    <input type="email" autocomplete="email" name="Email" required placeholder="Enter your email">
+                </div>
+                <div class="inputDiv">
+                    <label for="question">Question/Enquiry</label>
+                    <textarea name="Question" id="" cols="30" rows="10" required value="" placeholder="Ask your question or drop a comment"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
     </section>
-    <section>
-        <footer></footer>
+    <section id="footerSection">
+        <footer>
+            <div class="socialMedia">
+                <li class="socialMediaLinks"><a href="https://twitter.com/Jdon1992"><i class="fab fa-twitter" title="twitter" alt="twitter link"></i></a></li>
+                <li class="socialMediaLinks"><a href="https://www.instagram.com/donatus993/"><i class="fab fa-instagram" title="instagram" alt="instagram link"></i></a></li>
+                <li class="socialMediaLinks"><a href="https://web.facebook.com/joy.donatus3/"><i class="fab fa-facebook" title="facebook" alt="facebook link"></i></a></li>
+                <li class="socialMediaLinks"><a href="https://www.linkedin.com/in/joy-donatus/"><i class="fab fa-youtube" title="youTube" alt="youTube link"></i></a></li>
+                <li class="socialMediaLinks"><a href="https://www.linkedin.com/in/joy-donatus/"><i class="fab fa-linkedin-in" title="linkedIn" alt="linkedIn link"></i></a></li>
+
+            </div>
+        </footer>
     </section>
 </body>
 </html>
