@@ -60,6 +60,7 @@ section{
 
 .proj{
     flex-direction: column;
+    gap: 2px;
 }
 
 
