@@ -33,14 +33,18 @@ section{
     gap: 20%;
     padding: 10px 40px 10px 40px;
 }
+.headerSection, header, #footerSection, footer{
+    width: 100% !important;
+    background-color: #233142 !important;
+}
 .navDiv{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    width: 70%;
 }
-.contactDiv, .socialMedia, .logoDiv{
+
+.contactDiv, .logoDiv, .socialMedia{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,9 +55,10 @@ section{
 }
 
 li:hover, .navDiv li a:hover, .contactDiv li a:hover, i:hover{
-    color: #CCFFCC;
+    color: #CCFFCC !important;
     transform: scale(1.1);
 }
+
 li, .logoDiv a, i, .navDiv li a, .contactDiv li a{
     transition: all .3s ease-in-out;
 }
@@ -66,21 +71,27 @@ li, .logoDiv a, i, .navDiv li a, .contactDiv li a{
 .navDiv li, .socialMediaLinks, .contactDiv li{
     list-style-type: none;
 }
-.navDiv li a, .contactDiv li a{
+.navDiv li a, .contactDiv li a, i{
     text-decoration: none;
-    color: #F1E696;
+    color: #F1E696 !important;
 }
-nav, #footerSection{
-    background-color: #233142;
+
+footer p{
+    color: #F1E69670 !important;
 }
+
 #footerSection{
-    height: 100px;
+    height: fit-content;
 }
-i{
-   color: #F1E696;
-}
+
 .inputDiv{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+}
+
+@media (max-width: 1199.98px) { 
+    .navDiv, footer{
+        gap: 20px;
+    }
 }
