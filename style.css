@@ -9,9 +9,7 @@ body{
     width: 100%;
     height: 100vh;
 }
-.aboutMeDiv, .section{
-    margin-bottom: 40px;
-}
+
 .aboutMeDiv{
     display: flex;
     flex-direction: column;
@@ -25,6 +23,7 @@ section{
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 3rem ;
 }
 .navBar{
     display: flex;
@@ -37,29 +36,43 @@ section{
     width: 100% !important;
     background-color: #233142 !important;
 }
-.navDiv{
+.navDiv, .serviceDiv{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
 
-.contactDiv, .logoDiv, .socialMedia{
+.serviceDiv{
+    gap: 50px;
+}
+
+.contactDiv, .logoDiv, .socialMedia, .proj{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
+
+.projects{
+    background-color: #6A9AB0;
+}
+
+.proj{
+    flex-direction: column;
+}
+
+
 .logoDiv a:hover{
     transform: scale(1.05);
 }
 
-li:hover, .navDiv li a:hover, .contactDiv li a:hover, i:hover{
+.socialMedia li:hover, .navDiv li a:hover, .contactDiv li a:hover, i:hover{
     color: #CCFFCC !important;
     transform: scale(1.1);
 }
 
-li, .logoDiv a, i, .navDiv li a, .contactDiv li a{
+.socialMedia li, .logoDiv a, i, .navDiv li a, .contactDiv li a{
     transition: all .3s ease-in-out;
 }
 .logoDiv{
@@ -71,9 +84,24 @@ li, .logoDiv a, i, .navDiv li a, .contactDiv li a{
 .navDiv li, .socialMediaLinks, .contactDiv li{
     list-style-type: none;
 }
-.navDiv li a, .contactDiv li a, i{
+.navDiv li a, .contactDiv li a, i, .projects a{
     text-decoration: none;
     color: #F1E696 !important;
+}
+
+.profile{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: url("./images/profile_pics-removebg-previewh.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profiletext{
+    flex-direction: column;
+    text-align: justify !important;
 }
 
 footer p{
@@ -93,5 +121,14 @@ footer p{
 @media (max-width: 1199.98px) { 
     .navDiv, footer{
         gap: 20px;
+    }
+
+    .profile{
+        height: 300px;
+        width: 300px;
+    }
+
+    .lead, h1{
+        text-align: center ;
     }
 }
