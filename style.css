@@ -133,3 +133,12 @@ footer p{
         text-align: center ;
     }
 }
+
+@media (max-width: 767.98px) { 
+    .projtitle{
+        flex-direction: column;
+    }
+    .project{
+        gap: 10px;
+    }
+}
