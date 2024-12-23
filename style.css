@@ -55,7 +55,7 @@ section{
 }
 
 .projects{
-    background-color: #6A9AB0;
+    background-color: #355F2E;
 }
 
 .proj{
@@ -68,12 +68,12 @@ section{
     transform: scale(1.05);
 }
 
-.socialMedia li:hover, .navDiv li a:hover, .contactDiv li a:hover, i:hover{
+.socialMedia a:hover, .navDiv li a:hover, .contactDiv li a:hover, i:hover{
     color: #CCFFCC !important;
     transform: scale(1.1);
 }
 
-.socialMedia li, .logoDiv a, i, .navDiv li a, .contactDiv li a{
+.socialMedia a, .logoDiv a, i, .navDiv li a, .contactDiv li a{
     transition: all .3s ease-in-out;
 }
 .logoDiv{
@@ -85,14 +85,14 @@ section{
 .navDiv li, .socialMediaLinks, .contactDiv li{
     list-style-type: none;
 }
-.navDiv li a, .contactDiv li a, i, .projects a{
+.navDiv li a, .contactDiv li a, i, .projects a, .socialMedia a{
     text-decoration: none;
     color: #F1E696 !important;
 }
 
 .profile{
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     background-image: url("./images/profile_pics-removebg-previewh.png");
     background-position: center;
@@ -100,7 +100,7 @@ section{
     background-size: cover;
 }
 
-.profiletext{
+.profiletext, #contact{
     flex-direction: column;
     text-align: justify !important;
 }
@@ -123,7 +123,9 @@ footer p{
     .navDiv, footer{
         gap: 20px;
     }
-
+    footer{
+        gap: 10px;
+    }
     .profile{
         height: 300px;
         width: 300px;
@@ -132,6 +134,11 @@ footer p{
     .lead, h1{
         text-align: center ;
     }
+
+    .contactMe{
+        flex-direction: column;
+        gap: 5px;
+    }
 }
 
 @media (max-width: 767.98px) { 
@@ -139,6 +146,12 @@ footer p{
         flex-direction: column;
     }
     .project{
+        gap: 10px;
+    }
+    .contactMe{
+        text-align: center;
+    }
+    #contact{
         gap: 10px;
     }
 }
